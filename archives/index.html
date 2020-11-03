@@ -73,7 +73,7 @@
 		}
 	</script>
 	<script>
-		var darkmodeAutoSwitch = "system";
+		var darkmodeAutoSwitch = "false";
 		function setDarkmode(enable){
 			if (enable == true){
 				$("html").addClass("darkmode");
@@ -217,12 +217,18 @@
 											
 										</li>
 									
-										<li class='nav-item'>
-											<a href='/archives' class='nav-link' >
+										<li class='nav-item dropdown'>
+											<a href='' class='nav-link' onclick='return false;' data-toggle='dropdown' no-pjax>
 												<i class='ni ni-book-bookmark d-lg-none'></i>
-												<span class='nav-link-inner--text'>归档</span>
+												<span class='nav-link-inner--text'>二级菜单</span>
 											</a>
 											
+													<div class="dropdown-menu">
+														
+															<a href='/' class='dropdown-item'>归档</a>
+														
+													</div>
+												
 										</li>
 									
 							</ul>
