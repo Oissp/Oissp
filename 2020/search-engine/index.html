@@ -11,12 +11,12 @@
 	<meta name="description" content="主要内容来自在读的[《走进搜索引擎》（第2版）][1]，同时也记录我在读这本书的时候的一些思考。[1]: 潘雪峰. 走进搜索引擎(第2版) (Chinese Edition) ). 电子工业出版社. 2011.5  第1章 引言搜索引擎的3种服务方式：目录式搜索引擎、全文搜索引擎、元搜索引擎。这三种分类还是于我在学校的时候看到的一样，而我如今对第三者已经记忆模糊。后来回忆，在初中的计算机基础的课">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搜索引擎">
-<meta property="og:url" content="https://shenpeng.me/2020/11/02/search-engine/index.html">
+<meta property="og:url" content="https://shenpeng.me/2020/search-engine/index.html">
 <meta property="og:site_name" content="Notes for PM">
 <meta property="og:description" content="主要内容来自在读的[《走进搜索引擎》（第2版）][1]，同时也记录我在读这本书的时候的一些思考。[1]: 潘雪峰. 走进搜索引擎(第2版) (Chinese Edition) ). 电子工业出版社. 2011.5  第1章 引言搜索引擎的3种服务方式：目录式搜索引擎、全文搜索引擎、元搜索引擎。这三种分类还是于我在学校的时候看到的一样，而我如今对第三者已经记忆模糊。后来回忆，在初中的计算机基础的课">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-02T12:57:26.000Z">
-<meta property="article:modified_time" content="2020-11-04T14:39:10.000Z">
+<meta property="article:modified_time" content="2020-11-11T13:01:06.000Z">
 <meta property="article:author" content="Sushi">
 <meta property="article:tag" content="搜索引擎">
 <meta property="article:tag" content="读书笔记">
@@ -570,13 +570,13 @@
 	<article class="post post-full card bg-white shadow-sm border-0 ">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/2020/11/02/search-engine/">搜索引擎</a>
+		<a class="post-title" href="/2020/search-engine/">搜索引擎</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2020-11-2 20:57:26 | 编辑于 2020-11-4 22:39:10">2020-11-2 20:57
+							<time title="发布于 2020-11-2 20:57:26 | 编辑于 2020-11-11 21:01:06">2020-11-2 20:57
 							</time>
 						</div>
 					
@@ -595,7 +595,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							39 字
+							141 字
 						</div>
 					
 						
@@ -615,6 +615,14 @@
 <p>主要内容来自在读的[《走进搜索引擎》（第2版）][1]，同时也记录我在读这本书的时候的一些思考。<br>[1]: 潘雪峰. 走进搜索引擎(第2版) (Chinese Edition) ). 电子工业出版社. 2011.5</p>
 </blockquote>
 <h3 id="第1章-引言"><a href="#第1章-引言" class="headerlink" title="第1章 引言"></a>第1章 引言</h3><p>搜索引擎的3种服务方式：目录式搜索引擎、全文搜索引擎、元搜索引擎。这三种分类还是于我在学校的时候看到的一样，而我如今对第三者已经记忆模糊。后来回忆，在初中的计算机基础的课本上就提到过元搜索引擎，但是这么多年过去了，元搜索引擎并没有发展起来，相反变得更加没有存在感。</p>
+<p>搜索引擎的5个主要需求，即快、全、准、稳、省。</p>
+<p>影响速度的原因包括分词的效果、索引库的效率、分布查询的处理能力和查询缓存的命中率等。</p>
+<p>信息检索（Information retrieval）中使用查全率（Recall）作为衡量是否全面的指标，也叫作召回率，即查询出的相关网页数和全部相关网页数的比率。</p>
+<p>信息检索中使用查准率（Precision）作为衡量检索准确的指标，即检索出的相关文档数于检索出的文档总数的比率。</p>
+<p>在搜索引擎中查准比查全重要，查准与网页排序有关。</p>
+<p>搜索引擎的4大系统，包括下载、分析、索引和查询，还可以将前3者划分为离线系统，查询作为在线系统。</p>
+<h3 id="第2章-搜索引擎的下载系统"><a href="#第2章-搜索引擎的下载系统" class="headerlink" title="第2章 搜索引擎的下载系统"></a>第2章 搜索引擎的下载系统</h3><p>任意一个网页可能被其他网页链接，这种链接称为“反向链接”，这个网页链接到其他网页，这种链接称为“正向链接”。</p>
+<p>万维网具有蝴蝶结型（bow tie）结构，网页分为4种类型，蝴蝶结的中部（SCC，Strongly Connected Component），蝴蝶结的左部（IN，指向SCC，称为目录型网页，hub page,导航网页），蝴蝶结的右部（OUT，网页被中心部分指向，权威性网页，authority page），蝴蝶结的须脚（Tendrils，从左部链出到其他网页，或其他网页链入右部，或左部直接链入右部等，非连通分量DISC）。爬虫尽可能选择蝴蝶结的左部，或者中部的网页为起始访问结点集合（starting set of URLs）进行遍历。网页分为目录型网页和权威性网页。</p>
 
 	</div>
 
@@ -667,7 +675,7 @@
 				<span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
 			</button>
 		</a>
-		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=https://shenpeng.me/2020/11/02/search-engine/&text=搜索引擎" tooltip="分享到 Telegram">
+		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=https://shenpeng.me/2020/search-engine/&text=搜索引擎" tooltip="分享到 Telegram">
 			<button class="btn btn-icon btn-primary" style="background: #42a5f5;border: none;">
 				<span class="btn-inner--icon"><i class="fa fa-telegram"></i></span>
 			</button>
@@ -689,7 +697,7 @@
 主要内容来自在读的[《走进搜索引擎》（第2版）][1]，同时也记录我在读这本书的时候的一些思考。[...',
 	    wechatQrcodeTitle : "分享到微信",
 	    wechatQrcodeHelper : '微信扫描二维码',
-	    source : 'https://shenpeng.me/2020/11/02/search-engine/'
+	    source : 'https://shenpeng.me/2020/search-engine/'
 	});
 	$("#share_show")[0].onclick = function(){
 		$("#share_container").addClass("opened");
@@ -736,7 +744,7 @@
 
 
 
-<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/2020/11/02/start-again/" rel="next"> 再次出发</a></div></div>
+<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/2020/start-again/" rel="next"> 再次出发</a></div></div>
 
 
 
