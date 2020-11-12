@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://shenpeng.me/2020/search-engine/</loc>
+    <loc>https://shenpeng.me/2020/search-engine.html</loc>
     
     <lastmod>2020-11-11</lastmod>
     
   </url>
   
   <url>
-    <loc>https://shenpeng.me/2020/start-again/</loc>
+    <loc>https://shenpeng.me/2020/start-again.html</loc>
     
     <lastmod>2020-11-02</lastmod>
     
@@ -18,7 +18,7 @@
 
   <url>
     <loc>https://shenpeng.me/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -26,21 +26,21 @@
   
   <url>
     <loc>https://shenpeng.me/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://shenpeng.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://shenpeng.me/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
