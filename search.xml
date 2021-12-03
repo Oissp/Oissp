@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>自动部署</title>
+      <title>Hexo GitHub action自动部署</title>
       <link href="/2021/12/03/autodeploy/"/>
       <url>/2021/12/03/autodeploy/</url>
       
-        <content type="html"><![CDATA[<h1 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h1><p>第一次测试自动部署是否成功<br>第二次测试自动部署是否成功<br>第三次测试自动部署是否成功<br>第四次测试自动部署是否成功<br>第五次测试自动部署是否成功 </p>]]></content>
+        <content type="html"><![CDATA[<h1 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h1><p>Hexo 此前是在办公电脑上进行尝试，最后部署到 Github Pages 上。<br>此后，主要是对 git 的使用不是很熟悉，没有及时在不同的设备上配置 git &amp; node 环境，偶尔想更新博客的时候，就会觉得太麻烦。但凡这种一时兴起又需要长期养成的习惯，一旦出现中断，就很难继续。<br>之前就发现了可以通过 GitHub action 来实现，即在线写作、在线发布。但没有立即动手操作。<br>昨日下午，在办公电脑上开始准备自动部署的环境，但是在操作的过程中出现了许多的问题，一直不成功。</p><ul><li>修改_config.yml,补充 deploy 信息，即GitHub Page所在库的ssh地址。</li><li>在/source 目录下，新建 CNAME 文件，避免自定义域名丢失。</li><li>.gitignore 文件无需修改，即node_modules、public 文件夹无需上传到源文件仓库。</li><li>供部署用的ssh key，在生成时不能额外再加密码，否则验证不成功。</li></ul>]]></content>
       
       
       

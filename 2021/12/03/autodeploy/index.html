@@ -3,20 +3,20 @@
 <html class="article-header-style-default">
 <head>
 	
-	<title>自动部署 - Notes for PM</title>
+	<title>Hexo GitHub action自动部署 - Notes for PM</title>
 	<meta charset="utf-8">
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
-	<meta name="description" content="自动部署第一次测试自动部署是否成功第二次测试自动部署是否成功第三次测试自动部署是否成功第四次测试自动部署是否成功第五次测试自动部署是否成功">
+	<meta name="description" content="自动部署Hexo 此前是在办公电脑上进行尝试，最后部署到 Github Pages 上。此后，主要是对 git 的使用不是很熟悉，没有及时在不同的设备上配置 git &amp; node 环境，偶尔想更新博客的时候，就会觉得太麻烦。但凡这种一时兴起又需要长期养成的习惯，一旦出现中断，就很难继续。之前就发现了可以通过 GitHub action 来实现，即在线写作、在线发布。但没有立即动手操作。昨日">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自动部署">
+<meta property="og:title" content="Hexo GitHub action自动部署">
 <meta property="og:url" content="https://shenpeng.me/2021/12/03/autodeploy/index.html">
 <meta property="og:site_name" content="Notes for PM">
-<meta property="og:description" content="自动部署第一次测试自动部署是否成功第二次测试自动部署是否成功第三次测试自动部署是否成功第四次测试自动部署是否成功第五次测试自动部署是否成功">
+<meta property="og:description" content="自动部署Hexo 此前是在办公电脑上进行尝试，最后部署到 Github Pages 上。此后，主要是对 git 的使用不是很熟悉，没有及时在不同的设备上配置 git &amp; node 环境，偶尔想更新博客的时候，就会觉得太麻烦。但凡这种一时兴起又需要长期养成的习惯，一旦出现中断，就很难继续。之前就发现了可以通过 GitHub action 来实现，即在线写作、在线发布。但没有立即动手操作。昨日">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-03T08:14:47.000Z">
-<meta property="article:modified_time" content="2021-12-03T03:33:28.827Z">
+<meta property="article:modified_time" content="2021-12-03T04:49:13.840Z">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
 
@@ -555,13 +555,13 @@
 	<article class="post post-full card bg-white shadow-sm border-0 ">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/2021/12/03/autodeploy/">自动部署</a>
+		<a class="post-title" href="/2021/12/03/autodeploy/">Hexo GitHub action自动部署</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2021-12-3 8:14:47 | 编辑于 2021-12-3 3:33:28">2021-12-3 8:14
+							<time title="发布于 2021-12-3 8:14:47 | 编辑于 2021-12-3 4:49:13">2021-12-3 8:14
 							</time>
 						</div>
 					
@@ -580,7 +580,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							1 字
+							81 字
 						</div>
 					
 						
@@ -596,7 +596,13 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h1><p>第一次测试自动部署是否成功<br>第二次测试自动部署是否成功<br>第三次测试自动部署是否成功<br>第四次测试自动部署是否成功<br>第五次测试自动部署是否成功 </p>
+		<h1 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h1><p>Hexo 此前是在办公电脑上进行尝试，最后部署到 Github Pages 上。<br>此后，主要是对 git 的使用不是很熟悉，没有及时在不同的设备上配置 git &amp; node 环境，偶尔想更新博客的时候，就会觉得太麻烦。但凡这种一时兴起又需要长期养成的习惯，一旦出现中断，就很难继续。<br>之前就发现了可以通过 GitHub action 来实现，即在线写作、在线发布。但没有立即动手操作。<br>昨日下午，在办公电脑上开始准备自动部署的环境，但是在操作的过程中出现了许多的问题，一直不成功。</p>
+<ul>
+<li>修改_config.yml,补充 deploy 信息，即GitHub Page所在库的ssh地址。</li>
+<li>在/source 目录下，新建 CNAME 文件，避免自定义域名丢失。</li>
+<li>.gitignore 文件无需修改，即node_modules、public 文件夹无需上传到源文件仓库。</li>
+<li>供部署用的ssh key，在生成时不能额外再加密码，否则验证不成功。</li>
+</ul>
 
 	</div>
 
@@ -649,7 +655,7 @@
 				<span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
 			</button>
 		</a>
-		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=https://shenpeng.me/2021/12/03/autodeploy/&text=自动部署" tooltip="分享到 Telegram">
+		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=https://shenpeng.me/2021/12/03/autodeploy/&text=Hexo GitHub action自动部署" tooltip="分享到 Telegram">
 			<button class="btn btn-icon btn-primary" style="background: #42a5f5;border: none;">
 				<span class="btn-inner--icon"><i class="fa fa-telegram"></i></span>
 			</button>
@@ -666,8 +672,8 @@
 </div>
 <script type="text/javascript">
 	socialShare("#share", {
-	    title : '自动部署',
-	    description : '自动部署第一次测试自动部署是否成功第二次测试自动部署是否成功第三次测试自动部署是否成功第四次测试自动...',
+	    title : 'Hexo GitHub action自动部署',
+	    description : '自动部署Hexo 此前是在办公电脑上进行尝试，最后部署到 Github Pages 上。此后，主要是...',
 	    wechatQrcodeTitle : "分享到微信",
 	    wechatQrcodeHelper : '微信扫描二维码',
 	    source : 'https://shenpeng.me/2021/12/03/autodeploy/'
